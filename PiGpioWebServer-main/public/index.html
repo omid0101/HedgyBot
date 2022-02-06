@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robotech Kid's Projects">
+    <title>Pi GPIO</title>
+    <link rel="icon" type="image/png" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+   </head>
+
+<body oncopy="return false" oncut="return false" onpaste="return false">
+  
+  <div class="noselect">
+  
+  <div class="keypadContainer">
+    <h1 class="TextCenter">Control HedgyBot</h1>
+    
+    <div class="GpioContainer">
+      <strong>Move Forward</strong>
+      <br>
+      <label class="switch">
+        <input type="checkbox" id="Forward" disabled >
+        <span class="slider round"></span>
+      </label>	
+      <br>
+      <button id="ForwardM"></button>
+      <br>
+    </div>
+    
+    <div class="GpioContainer">
+      <strong>Move Backward</strong>
+      <br>
+      <label class="switch">
+        <input type="checkbox" id="Backward" disabled>
+        <span class="slider round"></span>
+      </label>	
+      <br>
+      <button id="BackwardM"></button>
+      <br>
+    </div>
+    
+    <div class="GpioContainer">
+      <strong>Move Left</strong>
+      <br>
+      <label class="switch">
+        <input type="checkbox" id="Left" disabled>
+        <span class="slider round"></span>
+      </label>	
+      <br>
+      <button id="LeftM"></button>
+      <br>
+    </div>
+    
+    <div class="GpioContainer">
+      <strong>Move Right</strong>
+      <br>
+      <label class="switch">
+      <input type="checkbox" id="Right" disabled>
+      <span class="slider round"></span>
+      </label>	
+      <br>
+      <button id="RightM"></button>
+      <br>
+    </div>
+    
+    </div>
+    
+  </div>
+    
+  <!-- include socket.io client side script -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+</html> 
